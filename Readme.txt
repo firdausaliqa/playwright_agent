@@ -21,3 +21,8 @@ Please run this test file. If it fails, immediately switch your context to @play
 --
 Prompt to Test guide:
 example: Login as admin, generate mock user data, and assert dashboard loads
+
+NOTES:
+1. please be aware of test explosion as the AI make it too easy to write test and could bottleneck CI pipelines
+2. Hallucination: agents sometimes misinterpret the DOM, resulting in false positive test that assert the wrong things
+3. Business logic gap: AI understand button click but struggles to understand the business context
